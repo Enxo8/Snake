@@ -91,7 +91,7 @@ public class Serpiente {
 
         //la cabeza podrá tocar como mucho, el quinto cuadrado en adelante de su cuerpo...
         //por eso el cuadrado 1, 2 y 3 no lo comprobamos
-        for (iCont=4;iCont < listaCuadrados.size();iCont++) {
+        for (iCont=1;iCont < listaCuadrados.size();iCont++) {
             if (listaCuadrados.get(iCont).estaEncimaDe(cabeza)) //oh oh, hemos chocado...
             	return true;
         }
